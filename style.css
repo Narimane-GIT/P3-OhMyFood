@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Roboto+Slab:wght@300;400;500&family=Shrikhand&display=swap');
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: "roboto", sans-serif;
+}
+/*main {
+    padding: 0 112px
+}*/
+header .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+header .logo img {
+    min-width: 200px;
+    max-width: 200px;
+}
+
+main > .ville {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    background-color: #dcdcdc;   
+}
+
+.reservez {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 50px;
+    background: #f3f3f3;
+}
+.reservez h1 {
+    font-size: 21px;
+}
+.reservez p {
+    font-size: 16px;
+    color: gray;
+}
+.reservez button {
+    color: white;
+    font-weight: 800;
+    font-size: 13px;
+    padding: 16px 32px;
+    border-radius: 32px;
+    border: none;
+    background: linear-gradient(#FF79DA , #9356DC);
+    transition: all 200ms;
+    margin-top: 16px;
+    box-shadow: 0 0 8px grey;
+    cursor: pointer;
+}
+.reservez button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.fonctionnement {
+    margin-left: 20px;
+}
+
+.fonctionnement ol {
+    display: flex;
+    gap: 16px;
+    padding-right: 24px;
+    padding-left: 24px;
+    min-width: 325px;
+}
+.fonction {
+    background-color: #f6f6f6;
+    padding: 20px 32px;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    font-weight: 550;
+}
+.fonctionnement li {
+    list-style-type: none;
+}
+/*.fonctionnement li:hover {
+    transform: scale(1.02);
+}*/
+
+@media (max-width :1000px) {
+    .fonctionnement ol {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 768px) {
+    .fonctionnement .choix ,
+    .fonctionnement h2 {
+        width: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.fonctionnement li i.fas {
+    margin-right: 16px;
+    color: rgb(102, 100, 100);
+
+}
+
+.fonctionnement li .numero {
+    color: #fff;
+    background-color: #9356DC;
+    border-radius: 50%;
+    padding: 8px;
+    position: relative;
+    top: 41px;
+    right: 12px;
+    font-size: 13px;
+    padding-block: 4px;
+
+}
+.fonct3 {
+    background-color: #e3d2f8;
+}
+.fonctionnement .fonct3 i.fa-store {
+    color: #9356DC;
+}
+.restaurants {
+    background-color: #f6f6f6;
+}
+.restaurants .carte {
+    background-color: #fff;
+    height: 218px;
+    flex-basis: 40%;
+    flex-grow: 1;
+    min-width: 306px;
+    margin: 16px;
+    border-radius: 20px 20px 20px 20px;
+}
+.restaurants h2 {
+    padding: 19px;
+    margin-bottom: -15px;
+}
+.menus {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 32px;
+}
+@media (max-width: 684px) {
+    .menus {
+        padding: 0;
+    }
+}
+
+
+
+.ImageCarte img{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.restaurants .DescriptionCarte {
+    width: auto;
+    margin-left: 10px;
+    font-size: 13px;
+}
+.restaurants .menus a {
+    text-decoration: none;
+    color: #000;
+}
+.DescriptionCarte h3 {
+    font-weight: bold;
+}
+.DescriptionCarte p {
+    color: gray;
+}
+.DescriptionCarte h3,
+.DescriptionCarte p {
+    margin-bottom: -10px;
+}
+.nouveau {
+    position: relative;
+}
+.nouveau::before {
+    content: "Nouveau";
+    position: absolute;
+    height: 32px;
+    width: 80px;
+    background-color: #99E2D0;
+    right: 16px;
+    top:16px;
+    color: green;
+    font-weight: 600;
+    text-align: center;
+    padding: 6px;
+}
+.menus .DescriptionCarte {
+    position: relative;
+}
+.menus .DescriptionCarte i {
+    font-size: 21px;
+    position: absolute;
+    right: 16px;
+    top: 0;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke:1px #000;
+    transition: all 1s;
+   -webkit-background-clip: text;
+     background-clip: text;
+    
+}
+.menus .DescriptionCarte i:hover {
+    opacity: 1;
+    background-image: linear-gradient(#FF79DA , #9356DC);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-text-stroke: 1px transparent;
+   transform: scale(1);
+}
+
+ 
+footer {
+    background-color: #353535;
+    padding: 5px 30px;
+    color: white;
+    font-size: 15px;
+}
+footer a {
+    color:white ;
+    text-decoration: none;
+}
+footer h3 {
+    font-family: "Shrikhand", sans-serif;
+    font-weight: 500;
+    padding: 16px;
+    margin:-11px;
+    margin-bottom: -22px;
+}
+header .retourner {
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    left: 20px;
+}
+.carte1 img {
+    max-width: 100%;
+
+}
+main h2 {
+  /*  font-family: "shrikhand", "sans serif";*/
+    margin-left: 14px;
+    margin-bottom: 20px;
+    margin-right: 2px;
+    font-weight: 550;
+  /*  font-size: 28px;*/
+    width: 70%;
+}
+.menu1 {
+    position: relative;
+    background-color: #f2f2f2;
+    border-radius: 45px 45px 0 0;
+    width: 100%;
+    margin-top: -83px;
+
+}
+.menu1 .nom-menu i {
+    font-size: 21px;
+    position: absolute;
+    right: 53px;
+    top: 27px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke:1px black;    
+    -webkit-background-clip: text ;
+    background-clip: text;
+    transition: all 1s;
+    cursor: pointer;
+}
+.menu1 .nom-menu i:hover {
+    opacity: 1;
+    background-image: linear-gradient(#FF79DA , #9356DC);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1);
+    -webkit-text-stroke: 1px transparent;
+}
+
+.menu1 h2 {
+    padding: 20px 16px;
+    font-family: "shrikhand", "sans serif";
+
+}
+.carte1 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  /*  position: absolute;*/
+}
+
+.menu h3 {
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-left: 8px;
+    font-size: 15px;
+}
+.menu .bordure {
+    border-bottom: solid #99E2D0;
+    margin-top: -9px;
+    width: 34px;
+    margin-left: 8px;
+}
+.option-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-radius: 12px;
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    overflow: hidden;
+    animation-delay: 2s;
+    animation: anim 2s linear forwards;
+    
+}
+.option {
+    margin: 12px;
+    cursor: pointer;
+
+  
+
+}
+.option-menu-description {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.option-menu h4 {
+    font-size: 13px;
+    margin: 10px;
+    font-weight: 700;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.option-menu-description p {
+    font-size: 11px;
+    margin: 10px;
+    margin-top: -4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.option-menu .prix {
+    font-size: 12px;
+    position: relative;
+    top: -8px;
+    right: 19px;
+    margin-left: auto;
+    font-weight: 700;
+}
+.boutton-commander {
+    display: flex;
+}
+.boutton-commander button{
+    color: white;
+    font-weight: 800;
+    padding: 14px 45px;
+    border-radius: 32px;
+    border: none;
+    background: linear-gradient(#FF79DA , #9356DC);
+    transition: all 200ms;
+    margin-top: 16px;
+    box-shadow: 0 0 8px grey;
+    margin-left: 105px;
+    margin-bottom: 27px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.boutton-commander button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+.option-menu_selectionner {
+    background-color: #99E2D0;
+    margin-right: -50px;
+    width: 50px;
+    height: 60px;
+    border-radius: 0 8px 8px 0;
+    transition: all 0.5s;
+
+    display: flex;
+    align-items: center;
+}
+.option-menu:hover .option-menu_selectionner{
+    margin-right: 0px;
+       
+}
+.option-menu_selectionner i {
+    margin-left: 14px;
+    background: white;
+    border-radius: 16px;
+    aspect-ratio: 1;
+    width: 20px;
+    color: #99E2D0;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.option-menu:hover .option-menu_selectionner .fas {
+    transform: rotate(360deg);
+    transition: transform 1.5s;
+}
+@media screen and (min-width: 768px) {
+    .palette {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .boutton-commander {
+        justify-content: center;
+    } 
+ /*
+    .option-menu p {
+        width: 90%;
+    }*/
+    .option {
+        margin-top: 24px;
+        width: 260px;
+    }
+}
+ @keyframes anim {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+ }
